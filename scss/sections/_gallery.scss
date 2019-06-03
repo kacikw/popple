@@ -1,0 +1,94 @@
+/* =============
+    Gallery
+============= */
+#gallery-container {
+  padding: 80px 10% 0;
+  text-align: center;
+
+  img {
+    width: 20px;
+  }
+
+  #gallery-img ul {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4";
+    grid-gap: 40px;
+    list-style-type: none;
+    padding: 30px 0 0;
+
+    li {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .gallery-1 {
+      background-image: url("/img/gallery/gallery-1.png");
+      grid-area: gallery-1;
+    }
+
+    .gallery-2 {
+      background-image: url("/img/gallery/gallery-2.png");
+      grid-area: gallery-2;
+    }
+
+    .gallery-3 {
+      background-image: url("/img/gallery/gallery-3.png");
+      grid-area: gallery-3;
+    }
+
+    .gallery-4 {
+      background-image: url("/img/gallery/gallery-4.png");
+      grid-area: gallery-4;
+    }
+    @include md {
+      padding: 10px 5% 0;
+      width: 95%;
+      margin-top: 20px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(3, 330px);
+      grid-template-areas: "gallery-1 gallery-2" "gallery-3 gallery-4" "gallery-5 gallery-6";
+
+      .gallery-5 {
+        background-image: url("/img/gallery/gallery-5.png");
+        grid-area: gallery-5;
+      }
+
+      .gallery-6 {
+        background-image: url("/img/gallery/gallery-6.png");
+        grid-area: gallery-6;
+      }
+    }
+    // ^end of medium
+    @include lg {
+      padding: 25px 0;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: repeat(4, 200px);
+      grid-template-areas: "gallery-1 gallery-2 gallery-3 gallery-4" "gallery-5 gallery-6 gallery-7 gallery-8";
+      grid-gap: 25px;
+      width: 90%;
+      padding-bottom: 0;
+      margin-bottom: -380px;
+
+      .gallery-7 {
+        background-image: url("/img/gallery/gallery-7.png");
+        grid-area: gallery-7;
+      }
+
+      .gallery-8 {
+        background-image: url("/img/gallery/gallery-8.png");
+        grid-area: gallery-8;
+      }
+    }
+    // ^end of large
+  }
+  // ^end of gallery img ul
+}
+
+.gallery li {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

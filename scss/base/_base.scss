@@ -1,0 +1,28 @@
+/* =============
+    Base
+============= */
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+
+main{
+  display: grid;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

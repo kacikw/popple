@@ -1,0 +1,70 @@
+/* =============
+    Hero
+============= */
+#hero-container {
+  padding-top: 100px;
+
+  h4 {
+    display: none;
+  }
+
+  img {
+    margin-left: 40%;
+    width: 60%;
+  }
+  // .circle {
+  //   height: 65px;
+  //   width: 65px;
+  //   background-color: $pink;
+  //   border-radius: 50%;
+  //   display: inline-block;
+  //   position: absolute;
+  //   z-index: 1000;
+  //   opacity: .5;
+  //   margin-left: 30%;
+  // }
+  #hero-text {
+    padding: 40px;
+    max-width: 500px;
+    grid-area: hero-text;
+  }
+
+  #hero-img {
+    grid-area: hero-img;
+  }
+  @include md {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "hero-text hero-img";
+
+    img {
+      margin-left: 10%;
+      width: 90%;
+    }
+
+    #hero-text {
+      padding-top: 130px;
+    }
+
+    h4 {
+      display: block;
+      width: 200px;
+      font-size: rem-calc(28);
+      color: $dk-blue;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      line-height: 40px;
+      z-index: 100;
+      position: absolute;
+      padding-left: 160px;
+      margin-top: -90px;
+    }
+  }
+  @include lg {
+    #hero-text {
+      padding: 200px 0 0 80px;
+      max-width: 500px;
+      grid-area: hero-text;
+    }
+  }
+}

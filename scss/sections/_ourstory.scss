@@ -1,0 +1,99 @@
+/* =============
+    Our Story
+============= */
+#our-story-container {
+  padding-bottom: 50px;
+
+  #amazing {
+    padding: 60px 5px;
+
+    h1 {
+      font-size: 19vw;
+      text-align: center;
+    }
+
+    p {
+      font-size: rem-calc(10);
+      padding-left: 10%;
+      margin-top: -20px;
+    }
+  }
+
+  #our-story-text {
+    padding: 50px 10%;
+  }
+
+  #year {
+    text-align: center;
+    padding: 30px 0;
+
+    h1 {
+      color: $gold;
+      font-size: rem-calc(207);
+      line-height: 180px;
+      opacity: 0.5;
+    }
+
+    p {
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+  }
+  @include md {
+    #our-story {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: "our-story-img our-story-text";
+    }
+
+    #our-story-text {
+      grid-area: our-story-text;
+    }
+
+    #our-story-img {
+      grid-area: our-story-img;
+    }
+
+    #amazing {
+      padding: 200px 0;
+
+      p {
+        font-size: rem-calc(16);
+        padding-left: 40%;
+      }
+    }
+
+    #year {
+      padding: 100px 0;
+
+      h1 {
+        font-size: rem-calc(270);
+        line-height: 250px;
+      }
+    }
+
+    p {
+      font-size: rem-calc(14);
+    }
+  }
+  @include lg {
+    #amazing {
+      margin: 100px 0;
+
+      h1 {
+        font-size: 15vw;
+      }
+
+      p {
+        font-size: rem-calc(15);
+        padding-left: 50%;
+        margin-top: -20px;
+      }
+    }
+
+    #our-story-text {
+      max-width: 550px;
+    }
+  }
+  // ^end of include lg
+}

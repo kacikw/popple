@@ -1,0 +1,107 @@
+/* =============
+    Footer
+============= */
+#footer {
+  color: $white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #C5BDBB;
+  padding: 35px 5%;
+  margin: 80px 0 0;
+
+  #footer-logo {
+    display: flex;
+
+    p {
+      font-size: rem-calc(11);
+      padding: 12px 0 0 10px;
+      color: $pink;
+      font-weight: 600;
+    }
+  }
+
+  i {
+    color: $dk-pink;
+    font-size: rem-calc(25);
+  }
+
+  i:active,
+  i:hover {
+    color: $pink;
+  }
+
+  img {
+    width: 130px;
+    padding: 10px 0 0 10px;
+  }
+  // bottom navigation
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    li {
+      margin: 0 10px;
+      font-family: 'Poppins',sans-serif;
+      letter-spacing: 2px;
+      padding: 10px;
+
+      a:link,
+      a:visited {
+        color: $dk-blue;
+        font-size: rem-calc(12);
+        font-weight: 600;
+      }
+
+      a:active,
+      a:hover {
+        color: $md-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+  @include md {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 'section nav div';
+
+    img {
+      width: 90px;
+      padding: 10px 0 0 10px;
+    }
+
+    i {
+      font-size: rem-calc(25);
+    }
+
+    p {
+      line-height: 11px;
+      margin-top: 15px;
+    }
+
+    a:visited,
+    ul li a:link {
+      font-size: rem-calc(11);
+    }
+
+    ul {
+      padding-top: 10px;
+    }
+
+    section {
+      grid-area: section;
+    }
+
+    div {
+      grid-area: div;
+    }
+
+    nav {
+      grid-area: nav;
+    }
+  }
+  // ^end of medium
+  @include lg {
+    padding: 10px 5%;
+    margin: 80px 0 0;
+  }
+}

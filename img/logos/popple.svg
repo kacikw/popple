@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="205px" height="41px" viewBox="0 0 205 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-65.000000, -57.000000)">
+            <g id="Group-5" transform="translate(65.000000, 45.000000)">
+                <g id="Group" transform="translate(25.500000, 27.500000) rotate(-270.000000) translate(-25.500000, -27.500000) translate(13.000000, 2.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="#E5C88D" x="10" y="19" width="6" height="32" rx="3"></rect>
+                    <circle id="Oval" fill="#E59381" cx="12.5" cy="12.5" r="12.5"></circle>
+                    <rect id="Rectangle" fill="#E59381" x="0" y="13" width="25" height="22"></rect>
+                </g>
+                <text id="Popple" font-family="Poppins-Bold, Poppins" font-size="40" font-weight="bold" fill="#B57D71">
+                    <tspan x="65" y="42">Popple</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

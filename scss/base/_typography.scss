@@ -1,0 +1,74 @@
+/* =============
+    Typography
+============= */
+
+body{
+	font-family: 'Work Sans', sans-serif;
+
+	h1,h2,h3,h4,h5{
+	    margin: 0;
+	    padding: 0;
+	}
+
+	p{
+	    margin: 0;
+	    padding: 0;
+			padding-bottom: 40px;
+			color: $md-blue;
+			line-height: 20px;
+	}
+
+	h1{
+		color: $dk-blue;
+		font-family: 'Poppins', sans-serif;
+		font-weight: bold;
+		font-size: rem-calc(35);
+		padding-bottom: 20px;
+	}
+
+	h4{
+		color: $pink;
+		font-size: rem-calc(14);
+		letter-spacing: 2px;
+		font-weight: 600;
+		padding-bottom: 10px;
+	}
+
+	h3, h5{
+		color: $green;
+	}
+
+	li{
+		color: $md-blue;
+	}
+
+			#amazing{
+				h1{
+					color: $green;
+
+					span{
+						color: $dk-blue;
+					}
+				}
+			}
+	@include md {
+		#amazing p{
+			font-size: rem-calc(23);
+		}
+
+		h1{
+			font-size: rem-calc(49);
+		}
+
+		p{
+			line-height: 25px;
+		}
+	}
+}
+
+
+#gallery-text{
+		h5{
+			font-size: rem-calc(26);
+		}
+}

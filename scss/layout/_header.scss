@@ -1,0 +1,31 @@
+/* =============
+    Header
+============= */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  z-index: 500;
+
+  img {
+    width: 130px;
+    padding: 10px 0 0 10px;
+  }
+
+  div {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "logo burger";
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  section:nth-child(1) {
+    grid-area: logo;
+  }
+
+  section:nth-child(2) {
+    grid-area: burger;
+    height: 100%;
+    text-align: right;
+  }
+}

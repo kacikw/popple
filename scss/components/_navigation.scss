@@ -1,0 +1,50 @@
+/* =============
+    Navigation
+============= */
+// burger
+
+#burger {
+  cursor: pointer;
+  z-index: 2000 !important;
+  position: relative;
+}
+// nav-container
+
+#nav-container {
+  background-color: $gray;
+  min-height: 100vh;
+  position: fixed;
+  right: -100vw;
+  top: 0;
+  width: 100vw;
+  z-index: 400;
+
+  nav {
+    padding-top: 130px;
+    text-align: right;
+    text-align: center;
+
+    ul {
+      li {
+        width: 100%;
+
+        a:link,
+        a:visited {
+          color: $md-blue;
+          display: block;
+          padding: 20px;
+          font-size: rem-calc(20);
+          font-weight: 700;
+          letter-spacing: 2px;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        a:active,
+        a:hover {
+          color: $dk-blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
